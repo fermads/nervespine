@@ -1,0 +1,9 @@
+{
+  "test/1" : "test/example/example.html",
+  "test/2" : "test/example/example.html",
+  "test/3" : "test/example/example.html",
+  "test/product/:id" : "test/example/example.html",
+  "*/" : "index.html",
+  "*" : "notfound.html",
+  "/test/save" : "test/ok"
+}

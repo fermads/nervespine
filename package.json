@@ -1,0 +1,31 @@
+{
+  "name": "nervespine",
+  "description": "'Anti-MVC' framework for single page apps inspired by Handlebars, Marionette and Backbone",
+  "version": "1.2.2",
+  "author": "Fernando MAdS <fermads@gmail.com>",
+  "keywords": [
+    "mvc",
+    "model",
+    "view",
+    "controller",
+    "backbone",
+    "single page app",
+    "handlebars",
+    "marionette"
+  ],
+  "devDependencies": {
+    "devservr": "^1.0.2",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-wrap": "^0.11.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "gulp test"
+  },
+  "license": "MIT"
+}
