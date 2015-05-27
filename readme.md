@@ -1,6 +1,6 @@
 # Nervespine
 
-"Anti-MVC" framework for single page apps inspired by Handlebars, Marionette
+Anti-MVC framework for single page apps inspired by Handlebars, Marionette
 and Backbone
 * Router and events based on Backbone's
 * Handlebars partials, helpers and template engine
