@@ -7,17 +7,28 @@ var wrap = require('gulp-wrap');
 var declare = require('gulp-declare');
 var concat = require('gulp-concat');
 var devservr = require('devservr');
+var clean = require('gulp-clean');
 var log = require('gulp/node_modules/gulp-util').log;
 
-gulp.task('default', function() {
+function build() {
   var filename = package.name +'-'+ package.version +'.min.js';
-  gulp.src('src/**/*.js')
-    .pipe(uglify())
-    .pipe(rename(filename))
-    .pipe(gulp.dest('dist/')).on('end', function() {
-      log('File created dist/'+ filename);
-    });
 
+  gulp.src('src/**/*.js')
+  .pipe(uglify())
+  .pipe(rename(filename))
+  .pipe(gulp.dest('dist/')).on('end', function() {
+    log('File created dist/'+ filename);
+  })
+  .pipe(rename('nervespine.min.js'))
+  .pipe(gulp.dest('dist/')).on('end', function() {
+    log('File created dist/nervespine.min.js');
+  });
+}
+
+gulp.task('default', function() {
+  return gulp.src('dist/*.js')
+    .pipe(clean())
+    .on('end', build);
 });
 
 gulp.task('test', function () {
