@@ -1,0 +1,31 @@
+{
+  "name": "nervespine",
+  "version": "1.2.2",
+  "homepage": "https://github.com/fermads/nervespine",
+  "authors": [
+    "Fernando MAdS <fermads@gmail.com>"
+  ],
+  "description": "Anti-MVC framework for single page apps inspired by Handlebars, Marionette and Backbone",
+  "main": "dist/nervespine-1.2.2.min.js",
+  "keywords": [
+    "mvc",
+    "model",
+    "view",
+    "controller",
+    "backbone",
+    "single page app",
+    "handlebars",
+    "marionette"
+  ],
+  "license": "MIT",
+
+  "ignore": [
+    "**/.*",
+    "test",
+    "*.md",
+    "gulpfile.js",
+    ".jshintrc",
+    "routes.json",
+    "package.json"
+  ]
+}
